@@ -1,2 +1,5 @@
 Data=read.csv("InData.csv")
-Data
+install.packages("dplyr")
+library(dplyr)
+x=select(Data,Total,Taxon,Scenario,Nutrients)
+head(x)
